@@ -1,12 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Text.Json.Serialization;
 
-namespace ClimaNaSuaCidade.Models
+namespace ClimaNaSuaCidade.Models;
+
+public class ClimaResponse
 {
-    internal class ClimaResponse
-    {
-    }
+    [JsonPropertyName("main")]
+    public MainInfo Main { get; set; }
+    [JsonPropertyName("weather")]
+    public List<WeatherInfo> Weather { get; set; }
 }
