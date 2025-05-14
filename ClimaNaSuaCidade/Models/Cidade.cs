@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿namespace ClimaNaSuaCidade.Models;
 
-namespace ClimaNaSuaCidade.Models
+public class Cidade
 {
-    internal class Cidade
-    {
-    }
+    public string Nome { get; set; }
 }
